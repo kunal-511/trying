@@ -1,0 +1,595 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*   */
+html,
+body {
+  font-family: "Baloo Bhai", cursive;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+nav {
+  padding: 20px 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.7fr 1.2fr 1.2fr 0.7fr 0.11fr ;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.content {
+  padding: 0px 14px;
+}
+.invisible {
+  display: none;
+}
+.invise1 {
+  display: none;
+}
+.invise2 {
+  display: none;
+}
+.invise3 {
+  display: none;
+}
+.invise4 {
+  display: none;
+}
+.invise5 {
+  display: none;
+}
+.invise6 {
+  display: none;
+}
+.invise7 {
+  display: none;
+}
+.invise8 {
+  display: none;
+}
+
+button {
+  width: 7vw;
+  height: 4vh;
+}
+.mainLogo {
+  max-width: 7vw;
+  height: 10vh;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.hamburger{
+  width: 4vw;
+  display: none;
+}
+.bell {
+  height: 8vh;
+  cursor: pointer;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+  /* background-color: #4CAF50; */
+  /* color: white; */
+  /* padding: 16px;
+    font-size: 16px; */
+  border: none;
+  cursor: pointer;
+  background: none;
+  display: flex;
+  color: blue;
+  height: 4vh;
+
+  text-align: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.down-arrow {
+  width: 1.4vw;
+  padding-left: 4px;
+  /* align-items: center;
+  justify-content: center;
+  padding-bottom: 40px; */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgb(47, 191, 239);
+}
+.login {
+  background-color: lightblue;
+  width: 10vw;
+  height: 8vh;
+  border: 1px solid lightblue;
+  border-radius: 6px;
+  color: blue;
+  cursor: pointer;
+}
+.login:hover {
+  color: white;
+  background-color: blue;
+}
+.post {
+  background-color: lightblue;
+  width: 9vw;
+  height: 8vh;
+  border: 1px solid lightblue;
+  border-radius: 6px;
+  color: blue;
+  cursor: pointer;
+}
+.post:hover {
+  color: white;
+  background-color: blue;
+}
+.post a{
+  text-decoration: none;
+}
+.post a:hover{
+  color: white;
+  
+}
+.main {
+  background-image: url("campaign-creators-gMsnXqILjp4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  margin-top: 160px;
+  color: darkorange;
+  margin-left: 34px;
+}
+.container h4 {
+  margin-bottom: 30px;
+}
+.container p {
+  margin-top: 14px;
+}
+.search {
+  background-color: white;
+  justify-content: center;
+  padding: 25px 30px;
+  align-items: center;
+  width: 65vw;
+  height: 8vh;
+  border: 1px solid white;
+  border-radius: 12px;
+  margin: 0px 0px;
+}
+input {
+  width: 28vw;
+  height: 8vh;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 5px;
+}
+select {
+  width: 12vw;
+  text-align: center;
+  height: 9vh;
+  margin: 0px 40px;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 5px;
+}
+.separation {
+  color: black;
+}
+.find {
+  border: blue 1px solid;
+  background-color: blue;
+  cursor: pointer;
+  width: 12vw;
+  height: 9vh;
+  color: white;
+  border-radius: 7px;
+}
+.find:hover {
+  background-color: white;
+  color: blue;
+}
+.popularJobs {
+  margin-top: 60px;
+}
+.popularJobs h2 {
+  text-align: center;
+  padding-bottom: 18px;
+}
+.popularJobs p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.category {
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr;
+  grid-gap: 40px;
+
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  border: 1px solid rgb(231, 228, 228);
+  padding: 10px 10px;
+  width: 27vw;
+  height: 14vh;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card:hover {
+  border: 3px solid rgb(231, 228, 228);
+}
+/* .logos{
+  padding: 4px;
+  background-color: rgb(240, 235, 235);
+
+} */
+/* .logos:hover{
+  background-image: url("megaphone.png");
+  color: white;
+} */
+.smallIcon {
+  width: 3vw;
+}
+.featuredJobs {
+  margin: 130px 10px;
+}
+.featuredJobs h1 {
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+.featuredJobs p {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.jobsDescription {
+  margin: 20px 16px;
+}
+.jobsDescription {
+  border: 1px solid rgb(231, 228, 228);
+}
+.content1 {
+  /* border: 1px solid rgb(231, 228, 228); */
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 0.5fr 1.2fr 1fr 1fr;
+  padding: 10px;
+  cursor: pointer;
+}
+.jobsDescription:hover {
+  border: 3px solid rgb(231, 228, 228);
+}
+.money {
+  width: 2vw;
+}
+.pin {
+  width: 2vw;
+}
+.briefCase {
+  width: 2vw;
+}
+.netflix {
+  width: 6vw;
+}
+.row2-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.row2-content span {
+  padding: 0px 14px;
+  width: 10vw;
+}
+.row3-content {
+  margin-left: 100px;
+}
+.row3-content button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.btn {
+  border: none;
+  border-radius: 12px;
+  background-color: lightskyblue;
+  color: blue;
+}
+.btn:hover {
+  background-color: lightblue;
+}
+.urgent {
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(199, 199, 192);
+  color: yellow;
+}
+.urgent:hover {
+  background-color: rgb(194, 194, 167);
+}
+#more {
+  background-color: blue;
+  cursor: pointer;
+  width: 16vw;
+  height: 8vh;
+  /* margin: 0px 500px; */
+  margin-top: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border: blue 1px solid;
+  border-radius: 8px;
+}
+.more:hover {
+  background-color: white;
+  color: blue;
+}
+
+.topCompanies {
+  margin: 140px 10px;
+}
+.topCompanies h1 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+.companyName {
+  /* margin: 80px 10px;
+  display: flex;
+  flex-wrap: wrap; */
+  margin: 80px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.1fr 0.5fr;
+}
+/* .companyName img{
+  padding: 14px 30px;
+} */
+.banner-netflix {
+  width: 7vw;
+}
+.container2 {
+  display: flex;
+  margin: 80px 16px;
+}
+.leftside {
+  background-image: url("https://apusthemes.com/wp-demo/superio-new/wp-content/uploads/2021/03/work.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 60%;
+  height: 100vh;
+}
+.rightside {
+  margin-left: 70px;
+}
+.rightside p {
+  margin: 18px 0px;
+  /* width: 60%; */
+}
+.rightside ul li {
+  padding: 8px 0px;
+}
+.rightside h1 {
+  font-size: 2.2rem;
+}
+.rightside button {
+  margin: 30px 0px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  width: 16vw;
+  height: 8vh;
+  border: blue 1px solid;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+.rightside button:hover {
+  background-color: white;
+  color: blue;
+}
+.employers {
+  padding-left: 230px;
+  padding-top: 460px;
+  width: 25vw;
+}
+.usersdata {
+  margin: 200px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 70px;
+  font-size: 1.4rem;
+}
+.recruiting {
+  background-color: rgb(225, 232, 245);
+  padding: 20px;
+  margin: 18px;
+  border-radius: 6px;
+}
+.recruiting p {
+  margin-top: 18px;
+}
+.recruiting h2 {
+  font-size: 2rem;
+}
+.recruiting button {
+  background-color: blue;
+  color: white;
+  width: 16vw;
+  height: 8vh;
+  border-radius: 8px;
+  margin: 24px 0px;
+  border: blue 1px solid;
+  color: white;
+  cursor: pointer;
+}
+
+.recruiting button:hover {
+  background-color: white;
+  color: blue;
+}
+
+section {
+  margin: 18px;
+  background-color: rgb(225, 232, 245);
+  padding: 30px 0px;
+  border-radius: 6px;
+}
+section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+section p {
+  padding: 10px 0px;
+  text-align: center;
+}
+table {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+#show th,
+#show td {
+  padding: 13px;
+}
+#btna td input {
+  width: 100%;
+}
+#btn{
+  cursor: pointer;
+}
+#btn:hover{
+  background-color: #333;
+  color: white;
+}
+#show {
+  margin: 50px;
+}
+.form {
+  margin: 50px;
+}
+.wrap {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+
+@media screen and (max-width:915px) {
+  .employers{
+    padding-left: 170px;
+    padding-top: 400px;
+  }
+  .leftside{
+    background-position: center;
+  }
+  
+}
+@media screen and (max-width:810px) {
+  .employers{
+    padding-left: 90px;
+    padding-top: 400px;
+  }
+  .leftside{
+    background-position: center;
+  }
+  .hamburger{
+    display: block;
+    margin-right: 20px;
+  }
+  .dropdown{
+    display: none;
+  }
+  nav button{
+    display: none;
+  }
+  nav{
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 0.09fr;
+  }
+}
+@media screen and (max-width:730px) {
+  .employers{
+    padding-left: 270px;
+    padding-top: 400px;
+    /* width: 40vw; */
+  }
+  .leftside{
+    background-position: cover;
+  }
+  .container2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .rightside{
+    margin-top: 40px;
+  }
+  @media screen and (max-width: 615px){
+    .employers{
+      padding-left: 220px;
+      padding-top: 400px;
+    }
+    .leftside{
+      background-position: center;
+    }
+    
+  }
+ 
+}
+@media screen and (max-width: 515px){
+  .employers{
+    padding-left: 190px;
+    padding-top: 400px;
+  }
+  .leftside{
+    background-position: cover;
+  }
+  
+}
+@media screen and (max-width: 430px){
+  .employers{
+    padding-left: 160px;
+    padding-top: 400px;
+  }
+  .leftside{
+    background-position: center;
+  }
+  
+}
+
+
