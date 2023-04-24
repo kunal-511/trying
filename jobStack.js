@@ -10,7 +10,6 @@ document.getElementsByClassName("login")[0].addEventListener("click", function()
 
 $("#more").click(function(){
     $(".hide").toggleClass("invisible");
-    $("#more").toggleClass("p")
     $(".content4").addClass("content1");
     
 });
